@@ -1,0 +1,41 @@
+
+
+<table style="border: 1px solid black;">
+
+    <tr>
+        <th>plantId</th>
+        <th>projectManagerId</th>
+        <th>projcetId</th>
+        <th>areaId</th>
+        <th>name</th>
+        <th>type</th>
+        <th>long</th>
+        <th>lat</th>
+        <th>datePlanted</th>
+        <th>lastChecked</th>
+        <th>status</th>
+        <th>about</th>
+      </tr>
+
+    {% for project in projects %}
+        <tr>
+            <td width="350" style="border: 1px solid black ;">{{project.plantId}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.projectManagerId}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.projectId}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.areaId}}</td>
+
+            <td width="350" style="border: 1px solid black ;">{{project.name}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.type}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.long}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.lat}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.datePlanted}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.lastChecked}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.status}}</td>
+            <td width="350" style="border: 1px solid black ;">{{project.about}}</td>
+        </tr>
+    {% endfor %}
+    
+
+  </table>
+
+
